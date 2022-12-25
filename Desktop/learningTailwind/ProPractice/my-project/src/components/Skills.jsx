@@ -27,22 +27,22 @@ const skillArr = [
 ]
 const Skills = () => {
     return (
-        <div className='flex flex-col px-10 xl:px-0 xl:w-[80vw] w-[95vw]  justify-center items-center m-auto'>
+        <div className='flex flex-col px-10 xl:px-0 xl:w-[80%] w-[95%]  justify-center items-center sm:m-auto m-0'>
             <HorizontalLine className={"mt-10 "} />
             <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2 w-full' >
                 {skillArr.map((skill) => {
                     return (
-                        <div className='flex flex-col justify-start items-start p-10 pl-0'>
+                        <div className='flex flex-col justify-start items-center sm:items-start text-center sm:text-start p-10 sm:pl-0'>
                             <h1 className='text-white font-bold text-3xl'>{skill.name}</h1>
-                            <span className='mt-3 text-[grey]'>{skill.experience}</span>
+                            <span className='mt-3 text-[grey] '>{skill.experience}</span>
                         </div>
                     )
                 })}
             </div>
-            <div className='overflow-clip '>
-                <img src={patternRings} alt="rings" className=' h-[5rem]  md:h-[5rem] relative  bottom-28 left-[150%] ' />
+            {/* <div className='overflow-clip relative sm:static'>
+                <img src={patternRings} alt="rings" className='absolute h-[5rem]  md:h-[5rem] sm:relative  bottom-28 left-[150%] ' />
 
-            </div>
+            </div> */}
         </div>
     )
 }
