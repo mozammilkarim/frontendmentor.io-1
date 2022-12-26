@@ -44,7 +44,7 @@ const TopSection = () => {
                 </div>
                 <a href='mailto:mozammilkarim@gmail.com' className='w-fit inline-block underline hover:text-[#4EE1A0]  decoration-[#4EE1A0]  underline-offset-[0.8rem] text-3xl m-auto sm:m-0 sm:text-start'>CONTACT ME</a>
             </div>
-            <div style={{ backgroundImage: `url(${profileImg})`, backgroundSize: "cover", backgroundPosition: 'center', backgroundRepeat: 'no-repeat', objectFit: 'contain' }} className={"sm:relative md:mr-10 !mr-0 top-10 sm:right-10 sm:mt-5 md:mt-0  md:-top-5 h-[90vh]  w-[100%] m-auto sm:w-1/2 md:w-[30rem]  max-w-[130%] "}>
+            <div style={{ backgroundImage: `url(${profileImg})`, backgroundSize: "cover", backgroundPosition: 'center', backgroundRepeat: 'no-repeat', objectFit: 'contain' }} className={"sm:relative md:mr-10 !mr-0 top-10 sm:right-10 sm:mt-5 md:mt-0  md:-top-5 h-[90vh]  w-[100%] m-auto sm:m-0 sm:w-[75%] md:w-[30rem]  max-w-[130%] "}>
                 <h2 className='font-semibold block sm:hidden text-center'>muzamil Karim</h2>
 
                 <div className='flex xl:justify-end justify-center'>
@@ -58,7 +58,7 @@ const TopSection = () => {
                 </div>
                 <div className='overflow-clip sm:overflow-auto relative sm:static'>
 
-                <img src={patternCircle} alt="circleDesign" className='absolute  sm:right-0 top-[23rem] -right-[3rem] sm:bottom-7 sm:-left-16' />
+                    <img src={patternCircle} alt="circleDesign" className='absolute  sm:right-0 top-[30rem] -right-[3rem] sm:bottom-7 sm:-left-16' />
                 </div>
             </div>
         </div>
