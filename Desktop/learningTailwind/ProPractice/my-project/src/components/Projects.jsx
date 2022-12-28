@@ -31,7 +31,7 @@ const projects=[
 const SingleProject=({project})=>{
     const [hover,setHover]=useState(false)
     return(
-        <div className='flex flex-col items-start justify-between bg-black cursor-pointer relative hover:opacity-75 opacity-100' onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
+        <div className='flex flex-col items-start justify-between  cursor-pointer relative hover:opacity-75 opacity-100' onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
                     {/* {hover?"mk":null} */}
                     <img src={project.img} alt={project.name} className='' />
                     {/* style={{ backgroundImage: `url(${project1})`, backgroundSize: "cover", backgroundPosition: 'center', backgroundRepeat: 'no-repeat', objectFit: 'contain' }} */}

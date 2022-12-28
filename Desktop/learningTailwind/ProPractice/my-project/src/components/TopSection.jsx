@@ -2,31 +2,8 @@ import React from 'react'
 import patternRings from "../assets/images/pattern-rings.svg"
 import patternCircle from "../assets/images/pattern-circle.svg"
 import profileImg from "../assets/images/image-profile-desktop.webp"
-import linkedin from "../assets/images/icon-linkedin.svg"
-import twitter from "../assets/images/icon-twitter.svg"
-import frontend from "../assets/images/icon-frontend-mentor.svg"
-import github from "../assets/images/icon-github.svg"
+import Socials from './Socials'
 
-const socials = [
-    {
-        name: "linkedIn",
-        url: "#",
-        icon: linkedin
-    },
-    {
-        name: "github",
-        url: "#",
-        icon: github
-    }, {
-        name: "twitter",
-        url: "#",
-        icon: twitter
-    }, {
-        name: "frontend",
-        url: "#",
-        icon: frontend
-    },
-]
 
 const TopSection = () => {
     return (
@@ -47,15 +24,7 @@ const TopSection = () => {
             <div style={{ backgroundImage: `url(${profileImg})`, backgroundSize: "cover", backgroundPosition: 'center', backgroundRepeat: 'no-repeat', objectFit: 'contain' }} className={"sm:relative md:mr-10 !mr-0 top-10 sm:right-10 sm:mt-5 md:mt-0  md:-top-5 h-[90vh]  w-[100%] m-auto sm:m-0 sm:w-[75%] md:w-[30rem]  max-w-[130%] "}>
                 <h2 className='font-semibold block sm:hidden text-center'>muzamil Karim</h2>
 
-                <div className='flex xl:justify-end justify-center'>
-                    {socials.map((social) => {
-                        return (
-                            <a href={social.url} key={social.name} className="flex justify-center items-center p-3">
-                                <img src={social.icon} alt={social.name} />
-                            </a>
-                        )
-                    })}
-                </div>
+                <Socials/>
                 <div className='overflow-clip sm:overflow-auto relative sm:static'>
 
                     <img src={patternCircle} alt="circleDesign" className='absolute  sm:right-0 top-[30rem] -right-[3rem] sm:bottom-7 sm:-left-16' />

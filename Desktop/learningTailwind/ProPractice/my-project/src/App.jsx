@@ -4,6 +4,8 @@ import './App.css'
 import TopSection from './components/TopSection'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import ContactSection from './components/ContactSection'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -13,6 +15,7 @@ function App() {
     <TopSection/>
     <Skills/>
     <Projects/>
+    <ContactSection/>
     </div>
   )
 }
