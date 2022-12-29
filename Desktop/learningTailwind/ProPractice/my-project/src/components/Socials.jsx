@@ -24,13 +24,14 @@ const socials = [
         icon: frontend
     },
 ]
-const Socials = () => {
+const Socials = ({socialClass}) => {
     return (
         <div className='flex xl:justify-end justify-center'>
             {socials.map((social) => {
                 return (
-                    <a href={social.url} key={social.name} className="flex justify-center items-center p-3">
-                        <img src={social.icon} alt={social.name} />
+                    <a href={social.url} key={social.name} className={`flex justify-center items-center p-3 `}>
+                        <img src={social.icon} alt={social.name} className={`${socialClass}`} style={{fill:"#4EE1A0"}}/>
+                        
                     </a>
                 )
             })}
