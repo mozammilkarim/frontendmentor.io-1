@@ -13,6 +13,7 @@ const Footer = () => {
                     <Socials socialClass={"fill-[blue]"} />
                 </div>
             </div>
+            <p className='mt-5 text-center'>This site is designed by frontendMentor.io and developed by me</p>
         </footer>
     )
 }
